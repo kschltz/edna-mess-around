@@ -25,10 +25,6 @@
    (when ~play? (play-fn#))
    (def ~(symbol tune) play-fn#)))
 
-
-
-
-
 (def notes
  [:c :c#
   :d :d#
@@ -55,13 +51,5 @@
 
  (sort instruments)
 (deftones "chords" [:percussion [(repeat 10 [:a :a 1/16 :b :b :c])]])
- (def cfg {:server-type :ion
-           :region "us-east-1"
-           :system "meu-datomico"
-           :creds-profile "perfil-perfilado"
-           :endpoint "http://entry.meu-datomico.us-east-1.datomic.net:8182/"
-           :proxy-port 8182})
-
- (def client (d/client cfg))
 
  )
